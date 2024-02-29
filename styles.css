@@ -1,0 +1,22 @@
+body {
+    background-color:orange;
+    border: solid black 5px;
+    padding:0 60px;
+}
+html{
+    background-color:blue;
+    padding: 0 10%;
+}
+h1{
+    text-align:center;
+    color:blue;
+    font-size:5rem;
+    text-shadow:2px 2px 0px black;
+}
+img{
+display:block;
+margin: 0 auto;
+}
+p{
+   text-align:left;
+}
