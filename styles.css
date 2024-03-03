@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body {
     background-color:orange;
     border: solid black 5px;
     padding:0 60px;
+    font-family:'Inter', serif;
+    font-weight:500;
 }
 html{
     background-color:blue;
@@ -13,10 +17,77 @@ h1{
     font-size:5rem;
     text-shadow:2px 2px 0px black;
 }
+
 img{
 display:block;
 margin: 0 auto;
 }
 p{
    text-align:left;
+}
+button {
+    display:block;
+    margin:10px auto;
+    outline:none;
+    border:solid grey 1px;
+    background-color:black;
+    color:black;
+    border-radius:30px;
+    transition: .1s all linear;
+    display:flex;
+    flex-flow:nowrap rows;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    width:140px;
+    height:40px;
+    transition:.5s linear ease all;
+}
+.button:hover{
+    background-color: blueviolet;
+    opacity:1;
+    right:15px
+}
+button img{
+    height:60%;
+    width:auto;
+    position:absolute;
+    opacity:0;
+    transition:all .1s linear;
+   right:10px;
+}
+.button:hover img{
+display:inline;
+opacity:1;
+transition:all .1s linear;
+}
+span{
+    position:relative;
+    font-size:1rem;
+    white-space:nowrap;
+    color:white;
+    animation:texts .2s linear forwards reverse;
+}
+.button:hover span{
+    animation:texts .2s linear forwards;
+    position:absolute;
+    left:10px;
+}
+
+
+
+
+body * {
+    text-align:center;
+    list-style:none;
+}
+
+/* Start Animations */
+@keyframes texts {
+    0%{
+        position:relative;
+    left:1%;}
+    100%{ position:absolute;
+        left:5px;
+         font-size:1rem; }
 }
